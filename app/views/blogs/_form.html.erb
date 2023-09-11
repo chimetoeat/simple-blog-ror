@@ -21,6 +21,12 @@
     <%= form.text_area:content %>
   </div>
 
+  <%= current_user.inspect %>
+  <div>
+    <%= form.label :id, style: "display: block" %>
+    <%= form.text_field:user_id %>
+  </div>
+
   <div>
     <%= form.submit %>
   </div>
