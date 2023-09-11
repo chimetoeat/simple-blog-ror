@@ -21,10 +21,16 @@
     <%= form.text_area:content %>
   </div>
 
-  <%= current_user.inspect %>
   <div>
-    <%= form.label :id, style: "display: block" %>
-    <%= form.text_field:user_id %>
+    <%= form.number_field:user_id, id: :blog_user_id, value: current_user.id, type: :hidden %>
+  </div>
+
+  <div>
+    <%= form.text_field:username, username: :blog_username, value: current_user.name, type: :hidden %>
+  </div>
+
+  <div>
+    <%= form.text_field:email, email: :blog_email, value: current_user.email, type: :hidden %>
   </div>
 
   <div>
