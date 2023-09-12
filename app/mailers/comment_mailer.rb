@@ -12,6 +12,6 @@ class CommentMailer < ApplicationMailer
     @user = @blog.user
     @greeting = "Hi"
     
-    mail to: @user.email, subject: "New Comment Created"
+    mail to: @user.email, subject: "Blog App new comment"
   end
 end
