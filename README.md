@@ -31,4 +31,6 @@ run rails db:migrate
 2. Open your chosen browser and navigate to 'http://localhost:3000' to access the app.
 3. Sign up for a new user
 4. When logged in, create a blog
-5. You can create another account and then put a comment on the blog.
+5. You can Sign out and create another account using Sign Up and then put a comment on the blog.
+6. To put a comment, go to Blogs and then choose a Blog then click "Show this Blog"
+7. You can reply to that certain comment and it will send an email to the owner of the blog.
