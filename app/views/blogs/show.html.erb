@@ -9,4 +9,7 @@
 
 <div class="container">
   <%= render 'blogcomments/form', blog: @blog %>
+  <% @comments.each do |comment| %>
+    <%= render 'blogcomments/comment', blog: @blog, comment: comment %>
+  <% end %>
 </div>
