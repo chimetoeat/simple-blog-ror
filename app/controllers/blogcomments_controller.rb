@@ -7,7 +7,7 @@ class BlogcommentsController < ApplicationController
         @comment.user = current_user
 
         if @comment.save
-            CommentMailer.with(user: current_user, comment: @comment).comment_created.deliver_later
+            CommentMailer.with(user: current_user, comment: @comment, blog: @blog).comment_created.deliver_later
             flash[:notice] = "Comment has been created"
             redirect_to blog_path(@blog)
         else
