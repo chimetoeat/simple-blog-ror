@@ -1,24 +1,34 @@
-# README
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple app that let's a user post blogs, and comment to those blogs.
+The app will send an email to the owner of the blog when it gets any comments.
 
-Things you may want to cover:
+# Features
 
-* Ruby version
+Create, show, update and delete Blog Posts
+Allow users to put a comment/feedback to blogs
 
-* System dependencies
+# Setup
 
-* Configuration
+1. Clone the repository:
 
-* Database creation
+Using Git BASH or cmd of your choice, go to your preferred folder then run
+git clone https://github.com/chimetoeat/simple-blog-ror.git
 
-* Database initialization
+2. cd to the application:
+run cd simple-blog-ror
 
-* How to run the test suite
+3. Install the required gems:
+run bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Create and migrate the database:
+run rails db:create and then
+run rails db:migrate
 
-* Deployment instructions
+# Usage
 
-* ...
+1. Go to the project directory and run 'rails s' in terminal
+2. Open your chosen browser and navigate to 'http://localhost:3000' to access the app.
+3. Sign up for a new user
+4. When logged in, create a blog
+5. You can create another account and then put a comment on the blog.
