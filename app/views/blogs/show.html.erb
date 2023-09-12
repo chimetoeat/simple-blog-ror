@@ -6,3 +6,7 @@
 
   <%= button_to "Destroy this blog", @blog, method: :delete %>
 </div>
+
+<div class="container">
+  <%= render 'blogcomments/form', blog: @blog %>
+</div>
